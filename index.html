@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Inspiration</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <script type="text/javascript">
+    function sel() {
+        const cl = location.href;
+        const mi = document.querySelectorAll('a');
+        const ml = mi.length;
+        for (let i = 0; i < ml; i++)
+        {
+            if(mi[i].href === cl)
+            {
+                mi[i].className = 'active';
+            }
+            else
+            {
+                mi[i].className = '';
+            }
+        }
+    }
+    </script>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i><img src="assets/menu_black_24dp.svg" alt="nothing"></i>
+        </label>
+        <label class="logo">Inspiration</label>
+        <ul>
+            <li><a href="#" class="active" onclick="sel()">Home</a></li>
+            <li><a href="#one" onclick="sel()">about</a></li>
+            <li><a href="#two" onclick="sel()">Achievments</a></li>
+            <li><a href="#three" onclick="sel()">Qualities</a></li>
+        </ul>
+    </nav>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</body>
+</html>
