@@ -74,18 +74,3 @@ nav a::before{
 nav a:hover::before{
     transform: scale(1,1);
 }
-#one{
-    height: 1024px;
-    width: 100%;
-    background: lightcoral;
-}
-#two{
-    height: 1024px;
-    width: 100%;
-    background: lightblue;
-}
-#three{
-    height: 1024px;
-    width: 100%;
-    background: lightgreen;
-}
