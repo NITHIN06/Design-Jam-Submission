@@ -17,7 +17,7 @@
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(7,1fr);
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://nithin06.github.io/Design-Jam-Submission//assets/ragnar8.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Design-Jam-Submission//assets/ragnar8.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 890px;
