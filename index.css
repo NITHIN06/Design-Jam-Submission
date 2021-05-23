@@ -41,7 +41,7 @@
 }
 @font-face {
     font-family: 'ragnar';
-    src: url('assets/fonts/Ragnarok.TTF');
+    src: url('./assets/fonts/Ragnarok.TTF');
     font-weight: 200;
 }
 #two2{
