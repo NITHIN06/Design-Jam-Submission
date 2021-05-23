@@ -5,10 +5,9 @@
     list-style: none;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto Mono', monospace;
-}
+
 nav{
+    font-family: 'Roboto Mono', monospace;
     background: rgba(0, 0, 10);
     position: fixed;
     overflow: hidden;
