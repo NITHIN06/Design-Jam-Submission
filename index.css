@@ -8,16 +8,22 @@
     background: linear-gradient(rgba(11,8,5,255), rgba(6,5,5,255), rgba(48,47,44,255), rgba(5,4,4,255));
 }
 #three{
-    background: lightblue;
+    background: linear-gradient(rgba(41,42,41,255), rgba(46,46,45,255), rgba(41,42,41,255));
+    height: 80px;
+    width: 100%; 
+}
+#four{
     height: 80px;
     width: 100%;
-    
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/ba.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #one1{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(7,1fr);
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./assets/ragnar8.jpg');
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/ragnar8.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 890px;
@@ -49,7 +55,10 @@
     width: 100%;
 }
 #three3{
-    background: url('assets/axe.jpg');
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(9,1fr);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/ach2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
@@ -82,7 +91,6 @@
     transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
-
 .cont .box .im{
     position: relative;
     width: 300px;
@@ -96,6 +104,7 @@
     border-radius: 10px;
 }
 .cont .box .tx{
+    font-weight: 600;
     position: relative;
     padding: 10px 15px;
     color: #111;
@@ -103,4 +112,140 @@
 }
 .cont .box .tx h1{
     font-family: ragnar;
+}
+#three3 .cont1{
+    grid-row: 4/8;
+    grid-column: 3/8;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.cont1 .box1{
+    position: relative;
+    width: 1100px;
+    max-height: 325px;
+    background:rgb(75, 75, 75);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.cont1 .box1 .im1{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    top: -60px;
+    left: 20px;
+}
+.cont1 .box1 .im1 img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.cont1 .box1 .tx1{
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+.cont1 .box1 .tx1 h1{
+    font-family: ragnar;
+}
+
+#four4{
+    height: 890px;
+    width: 100%;
+    display: grid;
+    background: url('assets/gal_bac1.jpg');
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(9,1fr);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.con{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.con .bo{
+    position: relative;
+    width: 375px;
+    height: 325px;
+    /*background-color: rgb(37, 37, 37);*/
+    background: url('assets/ragner10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+/*.con .bo:hover{
+    background: rgb(39, 39, 39);
+    height: 800px;
+    width: 528px;
+}*/
+.con .bo .im{
+    position: relative;
+    width: 360px;
+    height: 300px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgbs(0,0,0,0.2);
+}
+
+.con .bo .t{
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    font-size: 1px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+/*.con .bo:hover .t{
+    font-size: 15px;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+    transition-delay: 0.2s;
+}*/
+
+.reveal{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.act{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.ht{
+    font-size: 15px;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+    transition-delay: 0.2s;
+}
+.hbo{
+    background: rgb(39, 39, 39);
+    height: 800px;
+    width: 528px;
 }
