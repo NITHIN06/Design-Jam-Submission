@@ -276,7 +276,7 @@
         transition: all 2s ease;
     }
     .gottam1{
-        height: 640px !important;
+        height: auto !important;
     }
     .cont .box .im{
         display: none;
