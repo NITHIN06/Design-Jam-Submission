@@ -261,6 +261,12 @@
 }
 @media (max-width: 858px)
   {
+      .con{
+        width: 330px;
+    }
+    .front img{
+        width: 330px;
+    }
     #two2 .cont{
         grid-row: 1/4;
         grid-column: 3/8;
