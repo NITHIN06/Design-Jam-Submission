@@ -1,35 +1,43 @@
+.one{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ragnar8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #one{
     height: 80px;
     width: 100%;
 }
+.two{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/axe2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #two{
     height: 80px;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/top.jpg');
+}
+.three{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ach2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #three{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/bu.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 80px;
     width: 100%; 
+}
+.four{
+    background: url('assets/gal_bac1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #four{
     height: 80px;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ba.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #one1{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(7,1fr);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ragnar8.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 890px;
     width: 100%;
 }
@@ -62,16 +70,13 @@
 }
 @font-face {
     font-family: 'ragnar';
-    src: url('assets/fonts/Ragnarok.ttf');
+    src: url('assets/fonts/Ragnarok.TTF');
     font-weight: 200;
 }
 #two2{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(9,1fr);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/axe2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 890px;
     width: 100%;
 }
@@ -79,9 +84,6 @@
     display: grid;
     grid-template-rows: repeat(8,1fr);
     grid-template-columns: repeat(9,1fr);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ach2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 900px;
     width: 100%;
 }
@@ -94,22 +96,20 @@
     grid-row: 2/5;
     grid-column: 3/8;
     position: relative;
-    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
 }
-.cont .box{
+.box{
     position: relative;
     width: 1100px;
-    max-height: 325px;
+    height: 325px;
     background: rgb(204, 255, 255);
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
-    transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
 .cont .box .im{
@@ -124,12 +124,16 @@
     height: 400px;
     border-radius: 10px;
 }
+.cont .box .im1{
+    position: relative;
+    display: none;
+}
 .cont .box .tx{
     font-weight: 600;
+    font-size: 1em;
     position: relative;
     padding: 10px 15px;
     color: #111;
-    transition: 0.4s ease-in-out;
 }
 .cont .box .tx h1{
     font-family: ragnar;
@@ -138,25 +142,26 @@
     grid-row: 4/8;
     grid-column: 3/8;
     position: relative;
-    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
 }
-.cont1 .box1{
+.box1{
     position: relative;
     width: 1100px;
-    max-height: 325px;
+    height: 325px;
     background:rgb(75, 75, 75);
     margin: 30px 10px;
     padding: 20px 15px;
     display: flex;
-    transition: 0.3s ease-in-out;
     border-radius: 10px;
 }
-
+.cont1 .box1 .im2{
+    position: relative;
+    display: none;
+}
 .cont1 .box1 .im1{
     position: relative;
     width: 300px;
@@ -183,9 +188,6 @@
 #four4{
     height: 890px;
     width: 100%;
-    background: url('assets/gal_bac1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -256,4 +258,126 @@
 }
 .gottam{
     transform: rotateY(180deg);
+}
+@media (max-width: 858px)
+  {
+    #two2 .cont{
+        grid-row: 1/4;
+        grid-column: 3/8;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .box{
+        position: relative;
+        max-width: 300px;
+        height: 325px;
+        background: #fff;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transition-property: height;
+        transition: all 2s ease;
+    }
+    .gottam1{
+        height: 800px !important;
+    }
+    .cont .box .im{
+        display: none;
+    }
+    .cont .box .im1{
+        display: block;
+        position: relative;
+        width: 60%;
+        height: 80%;
+        top: -60px;
+        left: 50px;
+        box-shadow: 0 5px 20px rgbs(0,0,0,0.2);
+    }
+    .cont .box .im1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .cont .box .tx{
+        position: relative;
+        padding: 10px 15px;
+        color: #111;
+        margin-top: 10px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    .gottam2{
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 10px;
+    }
+    #three3 .cont1{
+        grid-row: 1/4;
+        grid-column: 3/8;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .box1{
+        position: relative;
+        top: -20px;
+        max-width: 300px;
+        height: 325px;
+        background: #fff;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transition-property: height;
+        transition: all 2s ease;
+    }
+    .pipe{
+        height: 800px !important;
+    }
+    .cont1 .box1 .im1{
+        display: none;
+    }
+    .cont1 .box1 .im2{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 45%;
+        top: -60px;
+        left: 10px;
+        box-shadow: 0 5px 20px rgbs(0,0,0,0.2);
+    }
+    .cont1 .box1 .im2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .cont1 .box1 .tx1{
+        position: relative;
+        padding: 10px 15px;
+        color: #111;
+        margin-top: 10px;
+        font-size: 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    .cont1 .box1 .tx1 h1{
+        font-family: ragnar;
+    }
+    .pipe2{
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 10px;
+    }
 }
