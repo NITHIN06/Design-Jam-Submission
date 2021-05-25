@@ -1,50 +1,57 @@
+@font-face {
+    font-family: 'ragnar';
+    src: url('assets/fonts/Ragnarok.ttf');
+    font-weight: 200;
+}
+.reveal{
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.act{
+    transform: translateY(0px);
+    opacity: 1;
+}
 .one{
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ragnar8.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-#one{
-    height: 80px;
-    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(7,1fr);
 }
 .two{
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/axe2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-#two{
-    height: 80px;
-    width: 100%;
-}
 .three{
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/ach2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-#three{
-    height: 80px;
-    width: 100%; 
-}
 .four{
+    height: 100vh;
     background: url('assets/gal_bac1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
-#four{
+#one, #two, #three, #four{
     height: 80px;
     width: 100%;
 }
 #one1{
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-    grid-template-columns: repeat(7,1fr);
-    height: 890px;
+    grid-row: 6/-1;
+    grid-column: 3/-1;
+    height: auto;
     width: 100%;
 }
 #one1 .h1{
     font-family: ragnar;
-    grid-row: 6/7;
-    grid-column: 3/7;
     background: -webkit-linear-gradient(rgb(255, 254, 254), #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,30 +75,13 @@
     }
 
 }
-@font-face {
-    font-family: 'ragnar';
-    src: url('assets/fonts/Ragnarok.ttf');
-    font-weight: 200;
-}
 #two2{
     display: grid;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(9,1fr);
-    height: 890px;
+    height: auto;
     width: 100%;
 }
-#three3{
-    display: grid;
-    grid-template-rows: repeat(8,1fr);
-    grid-template-columns: repeat(9,1fr);
-    height: 900px;
-    width: 100%;
-}
-.box1{
-    display: grid;
-    grid-template-rows: 740,aut0;
-}
-
 #two2 .cont{
     grid-row: 2/5;
     grid-column: 3/8;
@@ -137,6 +127,17 @@
 }
 .cont .box .tx h1{
     font-family: ragnar;
+}
+#three3{
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(9,1fr);
+    height: auto;
+    width: 100%;
+}
+.box1{
+    display: grid;
+    grid-template-rows: 740,aut0;
 }
 #three3 .cont1{
     grid-row: 4/8;
@@ -184,14 +185,10 @@
 .cont1 .box1 .tx1 h1{
     font-family: ragnar;
 }
-
 #four4{
-    height: 890px;
+    height: auto;
     width: 100%;
 }
-
-
-
 /*.con .bo:hover .t{
     font-size: 15px;
     visibility: visible;
@@ -199,35 +196,11 @@
     margin-top: 10px;
     transition-delay: 0.2s;
 }*/
-
-.reveal{
-    position: relative;
-    transform: translateY(200px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-.act{
-    transform: translateY(0px);
-    opacity: 1;
-}
-.ht{
-    font-size: 15px;
-    visibility: visible;
-    opacity: 1;
-    margin-top: 10px;
-    transition-delay: 0.2s;
-}
-.hbo{
-    background: rgb(39, 39, 39);
-    height: 800px;
-    width: 528px;
-}
-
 .middle{
     position: relative;
     transform-style: preserve-3d;
     top: 2%;
-    left: 10%;
+    left: 2%;
     transition: all 2s ease;
 }
 .con{
@@ -261,17 +234,11 @@
 }
 @media (max-width: 858px)
   {
-      .middle{
-    position: relative;
-    transform-style: preserve-3d;
-    top: 2%;
-    left: 2%;
-      }
-      label.logo{
-      font-size: 22px;
-      padding-left: 50px;
+    #one1 .h1{
+        font-size: 30px;
+        grid-column: 2/-1;
     }
-     .con{
+    .con{
         width: 330px;
     }
     .front img{
@@ -322,12 +289,16 @@
     }
     .cont .box .tx{
         position: relative;
+        top: -13px;
         padding: 10px 15px;
         color: #111;
         margin-top: 10px;
         visibility: hidden;
         opacity: 0;
         transition: all 2s ease;
+    }
+    .cont .box .tx p{
+        font-size: 15px;
     }
     .gottam2{
         visibility: visible !important;
