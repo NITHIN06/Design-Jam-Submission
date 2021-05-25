@@ -261,6 +261,12 @@
 }
 @media (max-width: 858px)
   {
+      .middle{
+    position: relative;
+    transform-style: preserve-3d;
+    top: 2%;
+    left: 2%;
+      }
       label.logo{
       font-size: 22px;
       padding-left: 50px;
