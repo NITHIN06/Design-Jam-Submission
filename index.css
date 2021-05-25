@@ -261,6 +261,10 @@
 }
 @media (max-width: 858px)
   {
+      #one1 .h1{
+        font-size: 30px;
+        grid-column: 2/-1;
+    }
       .con{
         width: 330px;
     }
