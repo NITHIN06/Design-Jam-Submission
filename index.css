@@ -261,14 +261,23 @@
 }
 @media (max-width: 858px)
   {
-      label.logo{
-      font-size: 22px;
-      padding-left: 50px;
-    }
-      #one1 .h1{
+      .middle
+      {
+        position: relative;
+        transform-style: preserve-3d;
+        top: 2%;
+        left: 2%;
+      }
+      label.logo
+      {
+          font-size: 22px;
+          padding-left: 50px;
+      }
+      #one1 .h1
+      {
         font-size: 30px;
         grid-column: 2/-1;
-    }
+     }
       .con{
         width: 330px;
     }
