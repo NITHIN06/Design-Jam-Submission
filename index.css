@@ -261,9 +261,9 @@
 }
 @media (max-width: 858px)
   {
-      #one1 .h1{
-        font-size: 30px;
-        grid-column: 2/-1;
+      label.logo{
+      font-size: 15px;
+      padding-left: 50px;
     }
      .con{
         width: 330px;
